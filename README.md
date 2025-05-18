@@ -2,6 +2,8 @@
 
 ## Project Directory Structure
 
+
+```
 assignment 2/
 ├── dataset/
 │   ├── train_images.npy
@@ -22,6 +24,7 @@ assignment 2/
 ├── vae_conv_encoder_decode.py
 └── vae_rnn_encoder_conv_decoder.py
 
+```
 
 ## Task 1
 
@@ -31,10 +34,14 @@ assignment 2/
 ### How to Run (Task 1)
 
 1. Train LSTM Autoencoder and get t-SNE visualization:
+    ```bash
     python lstm_ae.py
+    ```
 
 1. Train Convolutional Autoencoder and get t-SNE visualization:
+    ```bash
     python cae.py
+    ```
 
 
 
@@ -46,22 +53,33 @@ assignment 2/
 ### How to Run (Task 2)
 
 1. Train the classifier:
+    ```bash
     python classifier.py
 
 2. Train the LSTM + Conv VAE:
-    python vae_rnn_encoder_conv_decoder.py
+   ```bash
+   python vae_rnn_encoder_conv_decoder.py
+   ```
 
-3. Train the Conv + Conv VAE:
+4. Train the Conv + Conv VAE:
+    ```bash
     python vae_conv_encoder_decode.py
+    ```
 
-4. Train the Conditional VAE (3 classes: rabbit, yoga, snowman):
+5. Train the Conditional VAE (3 classes: rabbit, yoga, snowman):
+    ```bash
     python conditional_vae.py
+    ```
 
-5. Generate conditional samples and classify them:
+6. Generate conditional samples and classify them:
+    ```bash
     python cvae_second.py
+    ```
 
-6. Compare models using IS and FID:
-    python compare.py
+7. Compare models using IS and FID:
+   ```bash
+   python compare.py
+   ```
 
 ## Notes
 - Run training scripts first to generate required model files before generation/evaluation.
